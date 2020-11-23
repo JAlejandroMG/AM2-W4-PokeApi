@@ -50,11 +50,15 @@ export default class PokemonDetail extends React.Component {
   render() {
     return (
       <div className="pokemon-detail-container">
-        <div className="pokemon-detail-id">
-          <h3>{this.props.number}</h3>
-          <h2>{this.props.name}</h2>
+        <div className="pokemon-detail">
+          <div className="pokemon-detail-id">
+            <h3>{this.props.number}</h3>
+            <h2>{this.props.name}</h2>
+          </div>
+          <div className="pokemon-detail-img">
+            <img src={this.props.img} alt={this.props.name}/>
+          </div>
         </div>
-        <img src={this.props.img} alt={this.props.name}/>
         {
           this.state.showData &&
           <PokemonData pokemonTypes={this.state.pokemonTypes} pokemonStats={this.state.pokemonStats} closeModalFn={this.props.closeModalFn} />

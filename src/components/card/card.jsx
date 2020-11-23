@@ -42,7 +42,7 @@ export default class Card extends React.Component {
         </div>
         <img src={this.props.img} alt={this.props.name}/>
         <button onClick={() => this.openModal()}>Get details</button>
-          <Modal isOpen={this.state.showModal} style={customStyles} contentLabel="Pokemon Modal">
+          <Modal isOpen={this.state.showModal} style={customStyles}>
             <PokemonDetail number={this.props.number} name={this.props.name} img={this.props.img} closeModalFn={this.closeModal}/>
           </Modal>
       </div>
