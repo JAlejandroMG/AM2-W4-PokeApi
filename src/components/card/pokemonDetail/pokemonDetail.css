@@ -1,0 +1,38 @@
+.pokemon-detail-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  border: solid 1px #000;
+}
+
+.pokemon-detail-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+.pokemon-detail-container img{
+  width: 40%;
+}
+
+.pokemon-types {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemon-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-modal {
+  height: 2rem;
+  width: 30%;
+  margin: 1rem 0;
+}

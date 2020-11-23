@@ -1,0 +1,27 @@
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  border: solid 1px #000;
+}
+
+.pokemon-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+
+.card-container img{
+  width: 60%;
+}
+
+.card-container button{
+  height: 2rem;
+  width: 30%;
+  margin: 1rem 0;
+}
+

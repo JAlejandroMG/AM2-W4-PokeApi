@@ -1,0 +1,27 @@
+#root{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+}
+
+.pokedex-header {
+  height: 10%;
+}
+
+.pokedex-container{
+  height: 80%;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3%;
+  row-gap: 3%;
+ }
+
+.pokedex-pagination {
+  height: 10%;
+}

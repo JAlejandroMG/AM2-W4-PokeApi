@@ -1,0 +1,16 @@
+.pagination-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.pagination-row > .item{
+  flex-basis: 8%;
+  text-align: center;
+  background-color: #82b0ec;
+  cursor: pointer;
+}
+
+.pagination-row > .item:hover{
+  background-color: #c2c2c2;
+}
