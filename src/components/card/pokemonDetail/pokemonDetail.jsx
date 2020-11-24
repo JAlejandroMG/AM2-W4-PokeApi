@@ -17,6 +17,7 @@ export default class PokemonDetail extends React.Component {
     const stats = [];
     data.stats.map(stat => {
       stats.push(stat.base_stat)
+      return stats;
     })
     return stats;
   }
@@ -25,6 +26,7 @@ export default class PokemonDetail extends React.Component {
     const types = [];
     data.types.map(type => {
       types.push(type.type.name)
+      return types;
     })
     return types;
   }

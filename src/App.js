@@ -10,7 +10,7 @@ export default class App extends React.Component {
         this.state = {
             pokemones: [],
             currentPage: 1,
-            pokemonPerPage: 6,
+            pokemonPerPage: 12,
             pokemonLimit: 893
         }
     } //Hay un máximo de 893 imágenes de Pokemon disponibles y pokemonPerPage debe ser múltiplo de 3
@@ -34,12 +34,10 @@ export default class App extends React.Component {
       })
   }
 
-
   getNumber = (index) => {
     let id = (index + 1) + ((this.state.currentPage - 1) * this.state.pokemonPerPage);
     return id;
   }
-
 
   getImage = (index) => {
     let pokemonImg = "";
@@ -60,7 +58,6 @@ export default class App extends React.Component {
     return pokemonImg;
   }
 
-
   fetchPage = (requestPage) => {
     this.setState({currentPage: requestPage});
     //1. Completar el método para poder obtener los pokemones dependiendo de la página solicitada
@@ -74,11 +71,12 @@ export default class App extends React.Component {
           })
   }
 
-
     render() {
         return (
           <div className="container">
-            <div className="pokedex-header">Header</div>
+            <div className="pokedex-header">
+              <input></input>
+            </div>
             <div className="pokedex-container">
               {                
                 this.state.pokemones.map( (pokemon, index) => {      
