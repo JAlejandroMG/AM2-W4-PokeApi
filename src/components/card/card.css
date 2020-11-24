@@ -6,6 +6,9 @@
   border-radius: 4px;
   border: solid 1px #000;
 }
+.card-container:hover {
+  background: lightblue;
+}
 
 .pokemon-id {
   display: flex;

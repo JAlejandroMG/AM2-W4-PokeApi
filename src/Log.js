@@ -10,6 +10,16 @@
 //+ 20201122
 //* Fixed: modal button
 //* Partially done
+//+ 20201123
+//* Cambiar el fetch de card.jsx a pokemonDetail.jsx usando condicional para renderizar los detalles de cada pokemon solo cuando el estado de dichos detalles no este vacío
+//! Hecho
+//* Agregar hover a tarjetas
+//! Hecho
+//{ Agregar estilos a background tarjetas y modal de cada pokemonDetail
+//{ Agregar transición a cambio de página
+//} Personalizar la cantidad de tarjetas a mostrar por página input de número
+//} Ponerle flechas a los lados para cambio de página
+
 
 //{ El objetivo será usar los componentes de estado y la API pokeapi para poder listar los pokémones dependiendo de la página que se esté solicitando en el momento. API a usar: https://pokeapi.co/
 //[ 1. Crear un contenedor donde listaremos los pokémones (componente Card)

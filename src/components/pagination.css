@@ -1,14 +1,17 @@
 .pagination-row{
   display: flex;
-  justify-content: space-between;
-  padding: 1em 2em;
+  /* justify-content: space-between; */
+  /* padding: 1em 2em; */
 }
 
 .pagination-row > .item{
-  flex-basis: 8%;
-  text-align: center;
-  background-color: #82b0ec;
+  /* flex-basis: 8%;
+  text-align: center; */
   cursor: pointer;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background-color: #82b0ec;
 }
 
 .pagination-row > .item:hover{
