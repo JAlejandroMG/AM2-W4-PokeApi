@@ -61,7 +61,7 @@ export default class PokemonDetail extends React.Component {
             <img src={this.props.img} alt={this.props.name}/>
           </div>
         </div>
-        {
+        { // Ternario para usar un loader mientras carga arreglos
           this.state.showData &&
           <PokemonData pokemonTypes={this.state.pokemonTypes} pokemonStats={this.state.pokemonStats} closeModalFn={this.props.closeModalFn} />
         }
