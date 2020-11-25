@@ -25,6 +25,10 @@ export default class Card extends React.Component {
     }
   }
 
+  componentDidMount() {
+    Modal.setAppElement("body");
+  }
+
   openModal = () => {
     this.setState({showModal: true})
   }
