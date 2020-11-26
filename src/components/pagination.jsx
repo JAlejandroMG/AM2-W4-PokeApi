@@ -8,7 +8,6 @@ import './pagination.css';
 function Pagination(props){
     // const pokemonArray = Array.apply(null, Array(10)).map(() => {})
     const currentPage = props.currentPage;
-    // let pageLimit = Math.round(props.pokemonLimit/props.pokemonPerPage);
     let pageLimit = 0;
     (props.pokemonLimit % props.pokemonPerPage) === 0 ? pageLimit = props.pokemonLimit/props.pokemonPerPage : pageLimit = Math.floor(props.pokemonLimit/props.pokemonPerPage) + 1;
     const pages = [];
@@ -34,7 +33,7 @@ function Pagination(props){
             {
                 pages.map( (page, index) => {
                     return (                      
-                      <div className="item" key={index} onClick={() => props.fetchPageFn(page)}>{page}</div>
+                      <div className="pokepage" key={index} onClick={() => props.fetchPageFn(page)}><span>{page}</span></div>
                     )
                 })
             }

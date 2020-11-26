@@ -17,11 +17,23 @@
   height: 20%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-image: url(./img/pokemonBanner.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.pokedex-header .input {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.pokedex-header .input input {
+  width: 60%;
+  text-align: center;
+  outline-style: none;
 }
 
 .pokedex-container{
@@ -31,9 +43,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3%;
   row-gap: 3%;
+  padding: 1rem;
  }
 
 .pokedex-pagination {
+  width: 80%;
   height: 10%;
   display: flex;
   align-items: center;

@@ -10,7 +10,7 @@ function PokemonData(props) {
       {
         props.pokemonTypes.map((pokemonType, index) => {
           return (
-            <span key={index} >{pokemonType}</span>
+            <h3 key={index} style={{background: `${props.colors[index]}`}}>{pokemonType}</h3>
           )
         })
       }

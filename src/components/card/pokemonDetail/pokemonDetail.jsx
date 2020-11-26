@@ -52,18 +52,25 @@ export default class PokemonDetail extends React.Component {
   render() {
     return (
       <div className="pokemon-detail-container">
-        <div className="pokemon-detail">
-          <div className="pokemon-detail-id">
-            <h3>{this.props.number}</h3>
-            <h2>{this.props.name}</h2>
-          </div>
-          <div className="pokemon-detail-img">
-            <img src={this.props.img} alt={this.props.name}/>
-          </div>
-        </div>
-        { // Ternario para usar un loader mientras carga arreglos
-          this.state.showData &&
-          <PokemonData pokemonTypes={this.state.pokemonTypes} pokemonStats={this.state.pokemonStats} closeModalFn={this.props.closeModalFn} />
+        {
+          this.state.showData ? 
+          //* Se muestra una vez que están cargados los detalles del Pokemon
+            <div className="pokemon-detail-container">
+              <div className="pokemon-detail">
+                <div className="pokemon-detail-id">
+                  <h2>{this.props.number}</h2>
+                  <h2>{this.props.name[0].toUpperCase() + this.props.name.slice(1)}</h2>
+                </div>
+                <div className="pokemon-detail-img">
+                  <img src={this.props.img} alt={this.props.name}/>
+                </div>
+              </div>
+              <PokemonData pokemonTypes={this.state.pokemonTypes} pokemonStats={this.state.pokemonStats} closeModalFn={this.props.closeModalFn} colors={this.props.colors} />
+            </div>
+
+          :
+          //* Se muestra mientras los detalles del pokemon son cargados
+            <div className="pokeball"></div>
         }
       </div>
     );

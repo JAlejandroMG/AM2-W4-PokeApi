@@ -16,6 +16,7 @@
 //* Agregar hover a tarjetas
 //! Hecho
 //{ Agregar estilos a background tarjetas y modal de cada pokemonDetail
+//! Hecho
 //{ Agregar transición a cambio de página
 //} Personalizar la cantidad de tarjetas a mostrar por página input de número
 //} Ponerle flechas a los lados para cambio de página

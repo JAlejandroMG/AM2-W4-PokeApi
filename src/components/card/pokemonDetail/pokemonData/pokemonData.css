@@ -6,14 +6,20 @@
   align-items: center;
 }
 
-
 .pokemon-types {
   width: 70%;
   display: flex;
   justify-content: space-around;
 }
-.pokemon-types span {
-  background: red;
+
+.pokemon-types h3 {
+  color:#9a9a9a;
+  font-weight: 900;
+  filter: brightness(85%);
+  /* background-blend-mode: darken; */
+  /* border: 1px solid; */
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .pokemon-stats {
@@ -35,7 +41,14 @@
 }
 
 .button-modal {
-  height: 2rem;
-  width: 30%;
-  margin: 1rem 0;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+  height: 3rem;
+  width: 12rem;
+  margin: 2rem 0;
+  border-radius: 4rem;
+  background: linear-gradient(to right, #ee1515, #222224);
+  outline-style: none;
 }
