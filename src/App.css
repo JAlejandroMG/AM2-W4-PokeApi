@@ -2,6 +2,32 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  position: relative;
+}
+
+.contains-all {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://wallpapercave.com/wp/cqhO8rQ.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.above-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3)
 }
 
 .container {
@@ -14,27 +40,32 @@
 
 .pokedex-header {
   width: 100%;
-  height: 20%;
+  height: 15%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: url(./img/pokemonBanner.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.pokedex-header .input {
+.pokedex-header-img {
+  width:35%;
+  height: 100%;
+  background-image: url('./img/pokemon.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .pokedex-header .input {
   width: 20%;
   display: flex;
   justify-content: center;
 }
-
+PENDIENTE
 .pokedex-header .input input {
   width: 60%;
   text-align: center;
   outline-style: none;
-}
+} */
 
 .pokedex-container{
   height: 70%;
@@ -44,11 +75,13 @@
   column-gap: 3%;
   row-gap: 3%;
   padding: 1rem;
+  border-top: 13px solid #f1f1f1;
+  border-left: 13px solid #f1f1f1;
  }
 
 .pokedex-pagination {
-  width: 80%;
-  height: 10%;
+  width: 90%;
+  height: 15%;
   display: flex;
   align-items: center;
 }
